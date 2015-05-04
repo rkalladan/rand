@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+ 
+	<bean id="employee" class="com.rand.Employee">
+		<property name="name" value="rk" />
+		<property name="empid" value="101"></property>
+	</bean>
+	<bean id="beanFactory" class="com.rand.EmployeeBeanFactory" />
+ 
+</beans>
