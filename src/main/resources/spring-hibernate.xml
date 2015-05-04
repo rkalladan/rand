@@ -14,7 +14,7 @@
 		<property name="dataSource" ref="mysqlDataSource"/>
 		<property name="mappingResources">
 		<list>
-			<value>C:/project/workspace/Samples/RandSpring/src/main/resources/employee-hbm.xml</value>
+			<value>C:/project/repo/git/RandSpring/src/main/resources/emp.xml</value>
 		</list>
 		</property>
 		<property name="hibernateProperties">
