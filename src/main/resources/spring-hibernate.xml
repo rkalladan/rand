@@ -14,11 +14,11 @@
 		<property name="dataSource" ref="mysqlDataSource"/>
 		<property name="mappingResources">
 		<list>
-			<value>C:/project/repo/git/RandSpring/src/main/resources/emp.xml</value>
+			<value>emp.xml</value>
 		</list>
 		</property>
 		<property name="hibernateProperties">
-			<value>hibernate.dialect=org.hibernate.dialect.HSQLDialect</value>
+			<value>hibernate.dialect=org.hibernate.dialect.MySQLDialect</value>
 		</property>
 	</bean>
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
@@ -27,8 +27,8 @@
 		</property>
 	</bean>
 	<bean id="employeeDao" class="com.rand.sprhib.dao.EmployeeDAO">
-		<property name="hibernateTemplate">
-		<ref bean="hibernateTemplate"/>
+		<property name="sessionFactory">
+		<ref bean="mySessionFactory"/>
 		</property>
 	</bean>
 	

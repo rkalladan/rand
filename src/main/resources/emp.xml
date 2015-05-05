@@ -1,34 +1,20 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
- 
-<hibernate-mapping>
-    <class name="com.mkyong.common.Stock" table="stock" catalog="mkyong">
-        <id name="stockId" type="java.lang.Integer">
-            <column name="STOCK_ID" />
-            <generator class="identity" />
-        </id>
-        <property name="stockCode" type="string">
-            <column name="STOCK_CODE" length="10" not-null="true" unique="true" />
-        </property>
-        <property name="stockName" type="string">
-            <column name="STOCK_NAME" length="20" not-null="true" unique="true" />
-        </property>
-    </class>
-    <class name="com.rand.sprhib.model.Employee"
-         table="Employee">
-<id name="id" column="Id" type="java.lang.Integer">
-<generator class="identity"/>
-</id>
 
-<property name="name">
-<column name="Name"/>
-</property>
-<property name="age">
-<column name="Age"/>
-</property>
-<property name="salary">
-<column name="Salary"/>
-</property>
-</class>
+<hibernate-mapping>
+    <class name="com.rand.sprhib.model.Employee" table="Employee">
+		<id name="id" column="Id" type="java.lang.Integer">
+			<generator class="increment"/>
+		</id>
+		<property name="name">
+			<column name="Name"/>
+		</property>
+		<property name="age">
+			<column name="Age"/>
+		</property>
+		<property name="salary">
+			<column name="Salary"/>
+		</property>
+	</class>
 </hibernate-mapping>

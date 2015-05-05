@@ -1,7 +1,7 @@
 package com.rand.sprhib.model;
 
 public class Employee {
-	private String id;
+	private int id;
     private String name;
     private int age;
     private double salary;
@@ -9,11 +9,11 @@ public class Employee {
     public Employee() {
     }
 
-    public String getId(){
+    public int getId(){
         return id;
     }
 
-    public void setId(String id){
+    public void setId(int id){
         this.id = id;
     }
 

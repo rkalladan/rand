@@ -17,7 +17,7 @@ public class SpringHibMain {
         BeanFactory factory = new XmlBeanFactory(resource);
 
         Employee employee = new Employee();
-        employee.setId("123");
+        //employee.setId("123");
         employee.setName("ABC");
         employee.setAge(20);
         employee.setSalary(15000.00d);
@@ -26,8 +26,8 @@ public class SpringHibMain {
             "employeeDao");
         employeeDao.saveOrUpdate(employee);
 
-        Employee empResult = employeeDao.getEmployee("123");
-        System.out.println(empResult);
+        Employee empResult = employeeDao.getEmployee(1);
+        System.out.println(empResult.toString());
 
 	}
 
