@@ -1327,3 +1327,856 @@ Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolve
 	at java.lang.ClassLoader.loadClass(Unknown Source)
 	... 31 more
 2015-05-05 20:42:19 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@508969c3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 12:38:16 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-06 12:38:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [C:\project\repo\git\RandSpring\.\src\main\resources\spring-hibernate.xml]
+2015-05-06 12:38:17 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 12:38:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-05-06 12:38:18 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 12:38:18 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 12:38:18 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 12:43:23 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 12:43:28 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6a75863f: startup date [Wed May 06 12:43:28 IST 2015]; root of context hierarchy
+2015-05-06 12:43:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 12:43:29 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72808c3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 12:43:29 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 12:43:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-05-06 12:43:30 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 12:43:30 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 12:43:30 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 12:43:30 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 12:43:30 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72808c3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 12:44:33 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 12:44:33 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13a709f1: startup date [Wed May 06 12:44:33 IST 2015]; root of context hierarchy
+2015-05-06 12:44:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 12:44:34 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1439f77c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 12:44:34 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 12:44:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-05-06 12:44:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 12:44:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 12:44:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 12:44:34 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 12:44:34 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1439f77c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:56:00 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 13:56:00 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@892949f: startup date [Wed May 06 13:56:00 IST 2015]; root of context hierarchy
+2015-05-06 13:56:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 13:56:00 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37b79249: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:56:00 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 13:56:00 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 13:56:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 13:56:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 13:56:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 13:56:00 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 13:56:00 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37b79249: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:58:13 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 13:58:13 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1b8f2e35: startup date [Wed May 06 13:58:13 IST 2015]; root of context hierarchy
+2015-05-06 13:58:13 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 13:58:13 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4fe596de: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:58:13 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 13:58:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-05-06 13:58:13 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 13:58:13 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 13:58:13 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 13:58:14 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2015-05-06 13:58:14 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 13:58:14 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 13:58:14 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 13:58:14 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.cache.spi.RegionFactory]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.cache.spi.RegionFactory]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:261)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:225)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:295)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2442)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2438)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1855)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:252)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:377)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: org.hibernate.HibernateException: could not instantiate RegionFactory [org.hibernate.cache.ehcache.EhCacheRegionFactory]
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:101)
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:46)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:105)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:251)
+	... 24 more
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.cache.ehcache.EhCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:128)
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:87)
+	... 27 more
+2015-05-06 13:58:14 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4fe596de: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:59:12 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 13:59:12 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cfc61e9: startup date [Wed May 06 13:59:12 IST 2015]; root of context hierarchy
+2015-05-06 13:59:12 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 13:59:12 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@eafd67c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:59:12 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 13:59:13 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 13:59:13 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 13:59:13 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 13:59:13 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 13:59:13 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 13:59:13 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@eafd67c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:59:36 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 13:59:37 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52c54b3b: startup date [Wed May 06 13:59:37 IST 2015]; root of context hierarchy
+2015-05-06 13:59:37 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 13:59:37 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@367c1e66: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 13:59:37 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 13:59:37 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 13:59:37 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 13:59:37 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 13:59:37 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 13:59:37 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 13:59:37 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@367c1e66: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 14:10:57 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 14:10:57 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ab5df86: startup date [Wed May 06 14:10:57 IST 2015]; root of context hierarchy
+2015-05-06 14:10:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 14:10:57 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4367be7c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 14:10:57 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 14:10:58 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 14:10:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 14:10:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 14:10:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 14:10:58 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 14:10:58 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4367be7c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 14:26:31 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 14:26:31 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16ce38f1: startup date [Wed May 06 14:26:31 IST 2015]; root of context hierarchy
+2015-05-06 14:26:31 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 14:26:32 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@367c1e66: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 14:26:32 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 14:26:32 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 14:26:32 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 14:26:32 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 14:26:32 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 14:26:32 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:618)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+2015-05-06 14:26:32 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@367c1e66: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 14:46:58 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 14:46:58 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16ce38f1: startup date [Wed May 06 14:46:58 IST 2015]; root of context hierarchy
+2015-05-06 14:46:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 14:47:48 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 14:47:48 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52c54b3b: startup date [Wed May 06 14:47:48 IST 2015]; root of context hierarchy
+2015-05-06 14:47:48 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 14:48:38 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 14:48:38 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52c54b3b: startup date [Wed May 06 14:48:38 IST 2015]; root of context hierarchy
+2015-05-06 14:48:38 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 14:48:38 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@410afa7d: defining beans [employeeDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,transactionManager,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 14:48:38 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 14:48:38 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 14:48:38 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 14:48:38 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 14:48:38 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 14:48:38 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeDAO': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void com.rand.sprhib.annotation.dao.EmployeeDAO.setSessionFactory(org.hibernate.SessionFactory); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void com.rand.sprhib.annotation.dao.EmployeeDAO.setSessionFactory(org.hibernate.SessionFactory); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:295)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:864)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:779)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:575)
+	... 15 more
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 44 more
+2015-05-06 14:48:38 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@410afa7d: defining beans [employeeDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,transactionManager,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 15:25:58 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:25:58 INFO  ClassPathXmlApplicationContext:512 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c7c0754: startup date [Wed May 06 15:25:58 IST 2015]; root of context hierarchy
+2015-05-06 15:25:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:25:58 INFO  DefaultListableBeanFactory:603 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@366a88bb: defining beans [employeeDAO,employeeService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,transactionManager,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 15:25:58 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:25:59 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-05-06 15:25:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2015-05-06 15:25:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:25:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:25:59 WARN  ClassPathXmlApplicationContext:486 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeDAO': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void com.rand.sprhib.annotation.dao.EmployeeDAOImpl.setSessionFactory(org.hibernate.SessionFactory); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void com.rand.sprhib.annotation.dao.EmployeeDAOImpl.setSessionFactory(org.hibernate.SessionFactory); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:295)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [spring-hibernate-annotation.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:864)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:779)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:575)
+	... 15 more
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/util/DTDEntityResolver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.hibernate.cfg.Configuration.reset(Configuration.java:353)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:289)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:293)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:111)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:282)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 44 more
+2015-05-06 15:25:59 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@366a88bb: defining beans [employeeDAO,employeeService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,sessionFactory,mysqlDataSource,transactionManager,dbUtil,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-05-06 15:33:59 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:33:59 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Wed May 06 15:33:59 IST 2015]; root of context hierarchy
+2015-05-06 15:33:59 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:34:00 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:34:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:34:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:34:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:34:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:34:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2015-05-06 15:34:00 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:34:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:34:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:35:51 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:35:51 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Wed May 06 15:35:51 IST 2015]; root of context hierarchy
+2015-05-06 15:35:51 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:35:52 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:35:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:35:52 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:35:52 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:35:52 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:35:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2015-05-06 15:35:52 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:35:52 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:35:52 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:35:53 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2096faf3] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:38:45 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:38:45 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e96ffd: startup date [Wed May 06 15:38:45 IST 2015]; root of context hierarchy
+2015-05-06 15:38:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:38:45 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:38:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:38:45 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:38:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:38:45 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:38:46 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:38:46 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:38:46 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:38:46 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:38:46 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5caf2b5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:41:08 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:41:08 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17368db: startup date [Wed May 06 15:41:08 IST 2015]; root of context hierarchy
+2015-05-06 15:41:08 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:41:08 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:41:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:41:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:41:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:41:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:41:09 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:41:09 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:41:09 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:41:09 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:41:09 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@8b9820c] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:42:33 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:42:33 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cc11b55: startup date [Wed May 06 15:42:33 IST 2015]; root of context hierarchy
+2015-05-06 15:42:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:42:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:42:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:42:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:42:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:42:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:42:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:42:34 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:42:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:42:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:42:35 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4b08e64d] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:43:36 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:43:36 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e96ffd: startup date [Wed May 06 15:43:36 IST 2015]; root of context hierarchy
+2015-05-06 15:43:36 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:43:36 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:43:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:43:36 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:43:36 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:43:36 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:43:37 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:43:37 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:43:37 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:43:37 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:43:37 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@154d7534] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:45:00 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:45:00 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Wed May 06 15:45:00 IST 2015]; root of context hierarchy
+2015-05-06 15:45:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:45:01 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:45:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:45:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:45:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:45:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:45:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:45:01 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:45:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:45:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:45:02 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4f044c0b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:52:04 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:52:04 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e96ffd: startup date [Wed May 06 15:52:04 IST 2015]; root of context hierarchy
+2015-05-06 15:52:04 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:52:04 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:52:04 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:52:04 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:52:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:52:04 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:52:05 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:52:05 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:52:05 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:52:05 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:52:05 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4f044c0b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:53:16 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:53:16 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cc11b55: startup date [Wed May 06 15:53:16 IST 2015]; root of context hierarchy
+2015-05-06 15:53:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:53:17 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:53:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:53:17 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:53:17 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:53:17 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:53:17 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:53:17 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:53:17 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:53:17 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:53:18 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1049b3d9] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:53:57 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:53:57 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17368db: startup date [Wed May 06 15:53:57 IST 2015]; root of context hierarchy
+2015-05-06 15:53:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:53:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:53:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:53:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:53:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:53:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:53:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:53:58 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:53:58 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:53:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:53:59 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@8b9820c] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:54:31 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:54:31 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e96ffd: startup date [Wed May 06 15:54:31 IST 2015]; root of context hierarchy
+2015-05-06 15:54:31 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:54:32 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:54:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:54:32 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:54:32 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:54:32 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:54:32 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:54:32 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:54:32 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:54:32 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:54:33 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@52a1fc46] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 15:55:24 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-06 15:55:24 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [C:\project\repo\git\RandSpring\.\src\main\resources\spring-hibernate.xml]
+2015-05-06 15:55:24 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:55:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:55:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:55:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:55:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:55:25 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-06 15:55:25 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:55:25 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:55:25 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:55:25 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:56:36 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-06 15:56:36 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [C:\project\repo\git\RandSpring\.\src\main\resources\spring-hibernate.xml]
+2015-05-06 15:56:36 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:56:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:56:36 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:56:36 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:56:36 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:56:36 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-06 15:56:37 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:56:37 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 15:56:37 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 15:56:37 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 15:58:34 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 15:58:34 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cc11b55: startup date [Wed May 06 15:58:34 IST 2015]; root of context hierarchy
+2015-05-06 15:58:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 15:58:35 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 15:58:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 15:58:35 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 15:58:35 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 15:58:35 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 15:58:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 15:58:35 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:00:16 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 16:00:16 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Wed May 06 16:00:16 IST 2015]; root of context hierarchy
+2015-05-06 16:00:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 16:00:16 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 16:00:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 16:00:17 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 16:00:17 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 16:00:17 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 16:00:17 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 16:00:17 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:13:11 INFO  SpringhibAnnotateMain:16 - ************** BEGINNING PROGRAM **************
+2015-05-06 16:13:11 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Wed May 06 16:13:11 IST 2015]; root of context hierarchy
+2015-05-06 16:13:11 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 16:13:11 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 16:13:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 16:13:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 16:13:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 16:13:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 16:13:12 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 16:13:12 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:13:12 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 16:13:12 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 16:13:12 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4f044c0b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 16:32:25 INFO  SpringhibAnnotateMain:18 - ************** BEGINNING PROGRAM **************
+2015-05-06 16:32:26 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3fe9029b: startup date [Wed May 06 16:32:26 IST 2015]; root of context hierarchy
+2015-05-06 16:32:26 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 16:32:26 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 16:32:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 16:32:26 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 16:32:26 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 16:32:26 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 16:32:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 16:32:26 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:32:27 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 16:32:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 16:32:27 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@417a4745] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 16:33:07 INFO  SpringhibAnnotateMain:18 - ************** BEGINNING PROGRAM **************
+2015-05-06 16:33:07 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3fe9029b: startup date [Wed May 06 16:33:07 IST 2015]; root of context hierarchy
+2015-05-06 16:33:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 16:33:07 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 16:33:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 16:33:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 16:33:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 16:33:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 16:33:08 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 16:33:08 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:33:08 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 16:33:08 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 16:33:08 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@448d9973] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 16:33:09 WARN  SqlExceptionHelper:144 - SQL Error: 1062, SQLState: 23000
+2015-05-06 16:33:09 ERROR SqlExceptionHelper:146 - Duplicate entry 'ssn00000001' for key 'ssn'
+2015-05-06 16:35:34 INFO  SpringhibAnnotateMain:18 - ************** BEGINNING PROGRAM **************
+2015-05-06 16:35:34 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5aaa2ee4: startup date [Wed May 06 16:35:34 IST 2015]; root of context hierarchy
+2015-05-06 16:35:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 16:35:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 16:35:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 16:35:35 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 16:35:35 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 16:35:35 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 16:35:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 16:35:35 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:35:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 16:35:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 16:35:36 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1bf50c4] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-06 16:36:22 INFO  SpringhibAnnotateMain:18 - ************** BEGINNING PROGRAM **************
+2015-05-06 16:36:22 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5aeca93c: startup date [Wed May 06 16:36:22 IST 2015]; root of context hierarchy
+2015-05-06 16:36:22 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-06 16:36:22 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-06 16:36:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-06 16:36:22 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-06 16:36:22 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-06 16:36:22 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-06 16:36:23 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-06 16:36:23 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-06 16:36:23 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-06 16:36:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-06 16:36:23 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@42dd2498] of Hibernate SessionFactory for HibernateTransactionManager

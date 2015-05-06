@@ -18,7 +18,8 @@ public class Dbutil {
 	}
 	 
 	public void initialize(){
-	DataSource dataSource = getDataSource();
+		System.out.println("Inside initialize=======*******");
+	/*DataSource dataSource = getDataSource();
 	try {
 	Connection connection = dataSource.getConnection();
 	Statement statement = connection.createStatement();
@@ -27,6 +28,6 @@ public class Dbutil {
 	connection.close();
 	} catch (SQLException e) {
 	e.printStackTrace();
-	}
+	}*/
 	}
 }

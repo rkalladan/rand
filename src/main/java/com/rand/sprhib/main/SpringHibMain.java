@@ -20,13 +20,13 @@ public class SpringHibMain {
 
         Employee employee = new Employee();
         //employee.setId("123");
-        employee.setName("ABC");
-        employee.setAge(20);
-        employee.setSalary(15000.00d);
+        employee.setName("dkfhkjsdkfhkj");
+        employee.setAge(27);
+        employee.setSalary(15350.00d);
 
         EmployeeDAO employeeDao = (EmployeeDAO)factory.getBean(
             "employeeDao");
-        //employeeDao.saveOrUpdate(employee);
+        employeeDao.saveOrUpdate(employee);
 
         Employee empResult = employeeDao.getEmployee(4);
         System.out.println(empResult.toString());
