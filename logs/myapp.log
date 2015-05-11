@@ -2180,3 +2180,84 @@ Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolve
 2015-05-06 16:36:23 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2015-05-06 16:36:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
 2015-05-06 16:36:23 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@42dd2498] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-12 00:52:15 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-12 00:52:15 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [H:\workspace\git\rand\.\src\main\resources\spring-hibernate.xml]
+2015-05-12 00:52:17 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-12 00:52:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-12 00:52:17 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-12 00:52:17 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-12 00:52:17 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-12 00:52:18 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-12 00:52:19 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-12 00:52:19 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-12 00:52:20 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-12 00:52:20 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-12 00:52:21 WARN  SqlExceptionHelper:144 - SQL Error: 1146, SQLState: 42S02
+2015-05-12 00:52:21 ERROR SqlExceptionHelper:146 - Table 'rand.employee' doesn't exist
+2015-05-12 00:58:25 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-12 00:58:26 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [H:\workspace\git\rand\.\src\main\resources\spring-hibernate.xml]
+2015-05-12 00:58:26 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-12 00:58:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-12 00:58:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-12 00:58:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-12 00:58:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-12 00:58:27 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-12 00:58:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-12 00:58:28 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-12 00:58:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-12 00:58:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-12 00:58:30 WARN  SqlExceptionHelper:144 - SQL Error: 1146, SQLState: 42S02
+2015-05-12 00:58:30 ERROR SqlExceptionHelper:146 - Table 'rand.employee' doesn't exist
+2015-05-12 01:00:31 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-12 01:00:31 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [H:\workspace\git\rand\.\src\main\resources\spring-hibernate.xml]
+2015-05-12 01:00:32 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-12 01:00:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-12 01:00:33 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-12 01:00:33 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-12 01:00:33 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-12 01:00:33 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-12 01:00:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-12 01:00:34 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-12 01:00:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-12 01:00:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-12 01:00:35 WARN  SqlExceptionHelper:144 - SQL Error: 1146, SQLState: 42S02
+2015-05-12 01:00:35 ERROR SqlExceptionHelper:146 - Table 'rand.employee' doesn't exist
+2015-05-12 01:01:39 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-12 01:01:39 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [H:\workspace\git\rand\.\src\main\resources\spring-hibernate.xml]
+2015-05-12 01:01:40 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-12 01:01:41 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-12 01:01:41 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-12 01:01:41 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-12 01:01:41 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-12 01:01:41 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-12 01:01:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-12 01:01:42 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-12 01:01:43 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-12 01:01:43 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-12 01:01:43 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-12 01:01:43 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-12 01:01:43 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-12 01:01:43 INFO  DatabaseMetaData:147 - HHH000262: Table not found: Employee
+2015-05-12 01:01:43 INFO  DatabaseMetaData:147 - HHH000262: Table not found: Employee
+2015-05-12 01:01:43 INFO  DatabaseMetaData:147 - HHH000262: Table not found: Employee
+2015-05-12 01:01:44 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-12 01:02:31 INFO  SpringHibMain:16 - Entered the main class-------
+2015-05-12 01:02:32 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from file [H:\workspace\git\rand\.\src\main\resources\spring-hibernate.xml]
+2015-05-12 01:02:32 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-12 01:02:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-12 01:02:33 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-12 01:02:33 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-12 01:02:33 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-12 01:02:33 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015-05-12 01:02:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-12 01:02:34 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-12 01:02:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-12 01:02:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-12 01:02:35 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-12 01:02:35 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-12 01:02:36 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-12 01:02:36 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-12 01:02:36 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-12 01:02:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-12 01:02:36 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-12 01:02:36 INFO  SchemaUpdate:242 - HHH000232: Schema update complete

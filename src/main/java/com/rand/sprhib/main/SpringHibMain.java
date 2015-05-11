@@ -28,7 +28,7 @@ public class SpringHibMain {
             "employeeDao");
         employeeDao.saveOrUpdate(employee);
 
-        Employee empResult = employeeDao.getEmployee(4);
+        Employee empResult = employeeDao.getEmployee(1);
         System.out.println(empResult.toString());
 
 	}
