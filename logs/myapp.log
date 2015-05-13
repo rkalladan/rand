@@ -2180,3 +2180,549 @@ Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolve
 2015-05-06 16:36:23 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2015-05-06 16:36:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
 2015-05-06 16:36:23 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@42dd2498] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-08 23:41:54 INFO  SpringhibAnnotateMain:19 - ************** BEGINNING PROGRAM **************
+2015-05-08 23:41:55 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17368db: startup date [Fri May 08 23:41:55 IST 2015]; root of context hierarchy
+2015-05-08 23:41:55 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-08 23:41:55 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-08 23:41:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-08 23:41:56 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-08 23:41:56 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-08 23:41:56 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-08 23:41:56 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-08 23:41:56 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-08 23:41:56 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-08 23:41:56 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-08 23:41:57 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1d1dcb75] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-08 23:43:29 INFO  SpringhibAnnotateMain:19 - ************** BEGINNING PROGRAM **************
+2015-05-08 23:43:29 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3fe9029b: startup date [Fri May 08 23:43:29 IST 2015]; root of context hierarchy
+2015-05-08 23:43:29 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-08 23:43:29 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-08 23:43:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-08 23:43:29 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-08 23:43:29 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-08 23:43:29 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-08 23:43:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-08 23:43:30 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-08 23:43:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-08 23:43:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-08 23:43:30 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@64ae8431] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-08 23:43:31 WARN  SqlExceptionHelper:144 - SQL Error: 1146, SQLState: 42S02
+2015-05-08 23:43:31 ERROR SqlExceptionHelper:146 - Table 'rand.inv_role' doesn't exist
+2015-05-08 23:45:06 INFO  SpringhibAnnotateMain:19 - ************** BEGINNING PROGRAM **************
+2015-05-08 23:45:06 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Fri May 08 23:45:06 IST 2015]; root of context hierarchy
+2015-05-08 23:45:06 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-08 23:45:06 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-08 23:45:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-08 23:45:07 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-08 23:45:07 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-08 23:45:07 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-08 23:45:07 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-08 23:45:07 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-08 23:45:07 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-08 23:45:07 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-08 23:45:08 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-08 23:45:08 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-08 23:45:08 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-08 23:45:08 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-08 23:45:08 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-08 23:45:08 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:45:08 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-08 23:45:08 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-08 23:45:08 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-08 23:45:08 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:45:08 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-08 23:45:08 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-08 23:45:08 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-08 23:45:08 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-08 23:45:08 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-08 23:45:08 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-08 23:45:08 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-08 23:45:08 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-08 23:45:08 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@544daf24] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-08 23:48:11 INFO  SpringhibAnnotateMain:19 - ************** BEGINNING PROGRAM **************
+2015-05-08 23:48:11 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17368db: startup date [Fri May 08 23:48:11 IST 2015]; root of context hierarchy
+2015-05-08 23:48:11 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-08 23:48:12 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-08 23:48:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-08 23:48:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-08 23:48:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-08 23:48:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-08 23:48:12 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-08 23:48:12 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-08 23:48:12 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-08 23:48:12 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-08 23:48:13 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-08 23:48:13 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-08 23:48:13 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-08 23:48:13 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-08 23:48:13 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-08 23:48:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:48:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-08 23:48:13 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-08 23:48:13 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-08 23:48:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:48:13 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-08 23:48:13 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-08 23:48:13 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-08 23:48:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:48:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-08 23:48:13 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-08 23:48:13 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-08 23:48:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-08 23:48:13 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-08 23:48:13 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-08 23:48:13 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@55c646a3] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-08 23:50:46 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-08 23:50:47 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@675ad0c6: startup date [Fri May 08 23:50:47 IST 2015]; root of context hierarchy
+2015-05-08 23:50:47 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-08 23:50:47 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-08 23:50:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-08 23:50:47 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-08 23:50:47 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-08 23:50:47 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-08 23:50:48 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-08 23:50:48 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-08 23:50:48 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-08 23:50:48 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-08 23:50:48 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-08 23:50:48 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-08 23:50:48 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-08 23:50:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-08 23:50:48 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-08 23:50:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:50:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-08 23:50:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-08 23:50:48 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-08 23:50:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:50:48 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-08 23:50:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-08 23:50:48 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-08 23:50:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:50:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-08 23:50:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-08 23:50:48 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-08 23:50:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-08 23:50:48 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-08 23:50:48 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-08 23:50:48 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3330fadd] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-08 23:51:03 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-08 23:51:03 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b40ac2c: startup date [Fri May 08 23:51:03 IST 2015]; root of context hierarchy
+2015-05-08 23:51:03 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-08 23:51:04 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-08 23:51:04 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-08 23:51:04 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-08 23:51:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-08 23:51:04 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-08 23:51:04 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-08 23:51:04 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-08 23:51:04 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-08 23:51:04 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-08 23:51:05 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-08 23:51:05 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-08 23:51:05 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-08 23:51:05 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-08 23:51:05 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-08 23:51:05 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:51:05 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-08 23:51:05 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-08 23:51:05 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-08 23:51:05 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:51:05 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-08 23:51:05 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-08 23:51:05 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-08 23:51:05 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-08 23:51:05 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-08 23:51:05 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-08 23:51:05 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-08 23:51:05 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-08 23:51:05 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-08 23:51:05 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-08 23:51:05 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@55c646a3] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-10 14:20:15 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-10 14:20:15 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b40ac2c: startup date [Sun May 10 14:20:15 IST 2015]; root of context hierarchy
+2015-05-10 14:20:15 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-10 14:20:16 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-10 14:20:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-10 14:20:16 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-10 14:20:16 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-10 14:20:16 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-10 14:20:16 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-10 14:20:16 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-10 14:20:16 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-10 14:20:16 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-10 14:20:17 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-10 14:20:17 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-10 14:20:17 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-10 14:20:17 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-10 14:20:17 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-10 14:20:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:20:17 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-10 14:20:17 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-10 14:20:17 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-10 14:20:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:20:17 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-10 14:20:17 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-10 14:20:17 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-10 14:20:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:20:17 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-10 14:20:17 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-10 14:20:17 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-10 14:20:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-10 14:20:17 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-10 14:20:17 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-10 14:20:17 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@d91c428] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-10 14:24:57 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-10 14:24:57 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6be26bd2: startup date [Sun May 10 14:24:57 IST 2015]; root of context hierarchy
+2015-05-10 14:24:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-10 14:24:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-10 14:24:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-10 14:24:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-10 14:24:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-10 14:24:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-10 14:24:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-10 14:24:58 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-10 14:24:58 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-10 14:24:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-10 14:24:59 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-10 14:24:59 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-10 14:24:59 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-10 14:24:59 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-10 14:24:59 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-10 14:24:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:24:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-10 14:24:59 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-10 14:24:59 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-10 14:24:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:24:59 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-10 14:24:59 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-10 14:24:59 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-10 14:24:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:24:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-10 14:24:59 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-10 14:24:59 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-10 14:24:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-10 14:24:59 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-10 14:24:59 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-10 14:24:59 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@646d6546] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-10 14:31:14 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-10 14:31:16 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1cde0cc2: startup date [Sun May 10 14:31:16 IST 2015]; root of context hierarchy
+2015-05-10 14:31:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-10 14:31:17 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-10 14:31:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-10 14:31:18 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-10 14:31:18 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-10 14:31:18 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-10 14:31:19 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-10 14:31:19 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-10 14:31:19 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-10 14:31:19 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-10 14:31:20 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-10 14:31:20 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-10 14:31:20 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-10 14:31:20 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-10 14:31:20 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-10 14:31:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:31:20 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-10 14:31:20 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-10 14:31:20 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-10 14:31:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:31:20 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-10 14:31:20 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-10 14:31:20 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-10 14:31:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-10 14:31:20 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-10 14:31:20 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-10 14:31:20 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-10 14:31:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-10 14:31:20 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-10 14:31:20 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-10 14:31:20 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5a6a4fa0] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-11 16:15:18 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-11 16:15:19 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6cb77928: startup date [Mon May 11 16:15:19 IST 2015]; root of context hierarchy
+2015-05-11 16:15:19 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-11 16:15:20 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-11 16:15:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-11 16:15:20 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-11 16:15:20 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-11 16:15:20 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-11 16:15:21 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-11 16:15:21 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-11 16:15:21 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-11 16:15:22 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-11 16:15:22 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-11 16:15:22 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-11 16:15:22 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-11 16:15:23 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-11 16:15:23 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-11 16:15:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-11 16:15:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-11 16:15:23 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-11 16:15:23 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-11 16:15:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-11 16:15:23 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-11 16:15:23 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-11 16:15:23 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-11 16:15:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-11 16:15:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-11 16:15:23 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-11 16:15:23 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-11 16:15:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-11 16:15:23 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-11 16:15:23 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-11 16:15:23 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3330fadd] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-11 16:17:00 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-11 16:17:00 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b40ac2c: startup date [Mon May 11 16:17:00 IST 2015]; root of context hierarchy
+2015-05-11 16:17:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-11 16:17:01 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-11 16:17:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-11 16:17:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-11 16:17:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-11 16:17:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-11 16:17:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-11 16:17:01 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-11 16:17:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-11 16:17:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-11 16:17:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-11 16:17:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-11 16:17:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-11 16:17:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-11 16:17:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-11 16:17:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-11 16:17:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-11 16:17:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-11 16:17:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-11 16:17:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-11 16:17:02 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-11 16:17:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-11 16:17:02 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-11 16:17:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-11 16:17:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-11 16:17:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-11 16:17:02 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-11 16:17:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-11 16:17:02 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-11 16:17:02 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-11 16:17:02 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1bf2509c] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-11 16:28:27 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-11 16:28:27 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52e7bbeb: startup date [Mon May 11 16:28:27 IST 2015]; root of context hierarchy
+2015-05-11 16:28:27 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-11 16:28:28 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-11 16:28:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-11 16:28:28 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-11 16:28:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-11 16:28:28 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-11 16:28:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-11 16:28:29 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 15:40:25 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 15:40:25 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6350152f: startup date [Wed May 13 15:40:25 IST 2015]; root of context hierarchy
+2015-05-13 15:40:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 15:40:27 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 15:40:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 15:40:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 15:40:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 15:40:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 15:40:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 15:40:29 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 15:40:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-13 15:40:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-13 15:40:30 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-13 15:40:30 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-13 15:40:30 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-13 15:40:31 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-13 15:40:31 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-13 15:40:31 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:40:31 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-13 15:40:31 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-13 15:40:31 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-13 15:40:31 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:40:31 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-13 15:40:31 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-13 15:40:31 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-13 15:40:31 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:40:31 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-13 15:40:31 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-13 15:40:31 INFO  TableMetadata:67 - HHH000037: Columns: [username, role_id, user_id, password]
+2015-05-13 15:40:31 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_84x3ll71cjwiamsc8428bke86]
+2015-05-13 15:40:31 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_84x3ll71cjwiamsc8428bke86, primary]
+2015-05-13 15:40:32 ERROR SchemaUpdate:236 - HHH000388: Unsuccessful: alter table INV_Role add constraint FK_q6th4vios3yq05nrnt3fr54ii foreign key (user_id) references INV_Users (user_id)
+2015-05-13 15:40:32 ERROR SchemaUpdate:237 - Cannot add or update a child row: a foreign key constraint fails (`rand`.<result 2 when explaining filename '#sql-9cc_2'>, CONSTRAINT `FK_q6th4vios3yq05nrnt3fr54ii` FOREIGN KEY (`user_id`) REFERENCES `inv_users` (`user_id`))
+2015-05-13 15:40:32 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-13 15:40:32 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@200069ed] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-13 15:43:01 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 15:43:01 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7633910a: startup date [Wed May 13 15:43:01 IST 2015]; root of context hierarchy
+2015-05-13 15:43:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 15:43:01 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 15:43:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 15:43:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 15:43:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 15:43:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 15:43:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 15:43:02 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 15:43:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-13 15:43:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-13 15:43:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-13 15:43:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-13 15:43:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-13 15:43:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-13 15:43:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-13 15:43:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:43:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-13 15:43:03 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-13 15:43:03 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-13 15:43:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:43:03 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-13 15:43:03 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 15:43:03 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 15:43:03 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 15:43:03 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 15:43:03 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 15:43:03 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 15:43:03 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-13 15:43:03 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@36071bc7] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-13 15:55:28 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 15:55:28 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20986975: startup date [Wed May 13 15:55:28 IST 2015]; root of context hierarchy
+2015-05-13 15:55:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 15:55:29 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 15:55:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 15:55:29 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 15:55:29 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 15:55:29 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 15:55:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 15:55:30 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 15:56:57 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 15:56:58 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33776426: startup date [Wed May 13 15:56:58 IST 2015]; root of context hierarchy
+2015-05-13 15:56:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 15:56:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 15:56:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 15:56:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 15:56:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 15:56:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 15:56:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 15:56:59 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 15:56:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-13 15:56:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-13 15:56:59 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-13 15:56:59 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-13 15:56:59 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-13 15:56:59 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-13 15:56:59 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-13 15:56:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:56:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-13 15:57:00 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-13 15:57:00 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-13 15:57:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 15:57:00 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-13 15:57:00 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 15:57:00 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 15:57:00 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 15:57:00 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 15:57:00 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 15:57:00 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 15:57:00 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-13 15:57:00 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@6900eab5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-13 18:41:49 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 18:41:49 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20986975: startup date [Wed May 13 18:41:49 IST 2015]; root of context hierarchy
+2015-05-13 18:41:49 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 18:41:50 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 18:41:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 18:41:50 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 18:41:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 18:41:50 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 18:41:50 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 18:41:50 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 18:41:51 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-13 18:41:51 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-13 18:41:51 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-13 18:41:51 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-13 18:41:51 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-13 18:41:51 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-13 18:41:51 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-13 18:41:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:41:51 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-13 18:41:51 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-13 18:41:51 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-13 18:41:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:41:51 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users_INV_Role
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users_INV_Role
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users_INV_Role
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-13 18:41:51 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-13 18:41:52 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-13 18:41:52 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1e0a21ac] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-13 18:44:27 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 18:44:27 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7633910a: startup date [Wed May 13 18:44:27 IST 2015]; root of context hierarchy
+2015-05-13 18:44:27 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 18:44:28 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 18:44:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 18:44:28 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 18:44:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 18:44:28 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 18:44:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 18:44:28 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 18:44:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-13 18:44:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-13 18:44:29 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-13 18:44:29 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-13 18:44:29 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-13 18:44:29 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-13 18:44:29 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-13 18:44:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:44:29 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-13 18:44:29 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-13 18:44:29 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-13 18:44:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:44:29 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-13 18:44:29 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role_INV_Users
+2015-05-13 18:44:29 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-13 18:44:29 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-13 18:44:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:44:29 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-13 18:44:29 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-13 18:44:29 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-13 18:44:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:44:29 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-13 18:44:29 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role_INV_Users
+2015-05-13 18:44:29 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role_INV_Users
+2015-05-13 18:44:30 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-13 18:44:30 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@102bdf72] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-13 18:59:51 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-13 18:59:51 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7633910a: startup date [Wed May 13 18:59:51 IST 2015]; root of context hierarchy
+2015-05-13 18:59:51 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-13 18:59:52 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-13 18:59:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-13 18:59:52 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-13 18:59:52 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-13 18:59:52 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-13 18:59:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-13 18:59:52 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-13 18:59:52 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-13 18:59:52 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-13 18:59:53 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-13 18:59:53 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-13 18:59:53 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-13 18:59:53 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-13 18:59:53 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-13 18:59:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:59:53 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, ssn]
+2015-05-13 18:59:53 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-13 18:59:53 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-13 18:59:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:59:53 INFO  TableMetadata:70 - HHH000126: Indexes: []
+2015-05-13 18:59:53 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-13 18:59:53 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-13 18:59:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:59:53 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-13 18:59:53 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-13 18:59:53 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-13 18:59:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-13 18:59:53 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-13 18:59:53 INFO  DatabaseMetaData:147 - HHH000262: Table not found: inv_user_role
+2015-05-13 18:59:53 INFO  DatabaseMetaData:147 - HHH000262: Table not found: inv_user_role
+2015-05-13 18:59:53 INFO  DatabaseMetaData:147 - HHH000262: Table not found: inv_user_role
+2015-05-13 18:59:53 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-13 18:59:54 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@102bdf72] of Hibernate SessionFactory for HibernateTransactionManager

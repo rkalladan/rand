@@ -1,0 +1,14 @@
+CREATE TABLE `Inv_User` (
+    `user_id` BIGINT(10) NOT NULL AUTO_INCREMENT,
+
+    `firstname` VARCHAR(50) NULL DEFAULT NULL,
+
+    `lastname` VARCHAR(50) NULL DEFAULT NULL,
+
+    `password` VARCHAR(50) NOT NULL,
+	`username` VARCHAR(50) NOT NULL,
+
+    PRIMARY KEY (`user_id`)
+);
+
+commit;
