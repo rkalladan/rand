@@ -1,7 +1,8 @@
 package com.rand.sprhib.main;
 
-import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
@@ -29,12 +30,16 @@ public class SpringhibAnnotateMain {
 		/*Role role1 =new Role();
 		role1.setRolename("developer");
 		service.saveRole(role1);*/
-		/*Role role=service.getRolename(2);
+		Role role=service.getRolename(1);
+		Role role2=service.getRolename(2);
+		Set<Role> roleList=new HashSet<Role>();
+		roleList.add(role);
+		roleList.add(role2);
 		User user1=new User();
-		user1.setPassword("rk1");
-		user1.setUsername("rk1");
-		user1.setRole(role);
-		service.saveUser(user1);*/
+		user1.setPassword("rk2");
+		user1.setUsername("rk2");
+		user1.setRoleList(roleList);
+		service.saveUser(user1);
 		List<User> list=service.selectAllUsers();
         //List<Employee> list=service.selectAll();
         System.out.println("The list is"+list);

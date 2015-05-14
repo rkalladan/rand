@@ -2810,3 +2810,374 @@ Caused by: java.lang.ClassNotFoundException: org.hibernate.util.DTDEntityResolve
 2015-05-13 18:59:53 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
 2015-05-13 18:59:54 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@102bdf72] of Hibernate SessionFactory for HibernateTransactionManager
 >>>>>>> origin/master
+2015-05-14 23:32:31 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:32:32 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73131d98: startup date [Thu May 14 23:32:32 IST 2015]; root of context hierarchy
+2015-05-14 23:32:32 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:32:34 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:33:24 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:33:24 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1f3c5cc8: startup date [Thu May 14 23:33:24 IST 2015]; root of context hierarchy
+2015-05-14 23:33:24 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:33:26 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:33:26 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:33:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:33:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:33:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:33:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:33:28 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Access denied for user 'appuser'@'localhost' (using password: YES)
+2015-05-14 23:33:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:33:28 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2015-05-14 23:33:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:33:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:33:31 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:33:31 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:33:31 ERROR SchemaUpdate:201 - HHH000319: Could not get database metadata
+java.sql.SQLException: Access denied for user 'appuser'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3558)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3490)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3996)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2137)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:352)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:284)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:553)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:22)
+2015-05-14 23:33:31 ERROR SchemaUpdate:247 - HHH000299: Could not complete schema update
+java.sql.SQLException: Access denied for user 'appuser'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3558)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3490)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3996)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2137)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:352)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:284)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:553)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.rand.sprhib.main.SpringhibAnnotateMain.main(SpringhibAnnotateMain.java:22)
+2015-05-14 23:33:31 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@8b9820c] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-14 23:33:31 WARN  SqlExceptionHelper:144 - SQL Error: 1045, SQLState: 28000
+2015-05-14 23:33:31 ERROR SqlExceptionHelper:146 - Access denied for user 'appuser'@'localhost' (using password: YES)
+2015-05-14 23:36:57 INFO  SpringhibAnnotateMain:20 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:36:57 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1f3c5cc8: startup date [Thu May 14 23:36:57 IST 2015]; root of context hierarchy
+2015-05-14 23:36:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:36:59 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:36:59 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:36:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:37:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:37:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:37:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:37:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:37:01 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-14 23:37:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:37:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:37:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:37:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:37:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: Empl
+2015-05-14 23:37:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-14 23:37:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-14 23:37:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:37:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: inv_user_role
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: Empl
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: inv_user_role
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: Empl
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Role
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: INV_Users
+2015-05-14 23:37:02 INFO  DatabaseMetaData:147 - HHH000262: Table not found: inv_user_role
+2015-05-14 23:37:03 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-14 23:37:03 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@44fc511a] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-14 23:38:45 INFO  SpringhibAnnotateMain:19 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:38:45 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@61b1acc3: startup date [Thu May 14 23:38:45 IST 2015]; root of context hierarchy
+2015-05-14 23:38:46 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:38:47 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:38:47 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:38:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:38:47 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:38:47 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:38:47 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:38:48 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:38:48 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-14 23:38:49 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:38:49 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:38:49 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:38:49 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:38:50 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-14 23:38:50 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-14 23:38:50 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-14 23:38:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:38:50 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, uk_6ugg4012ia0d6tlpfjoc2bgly]
+2015-05-14 23:38:50 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-14 23:38:50 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-14 23:38:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:38:50 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:38:50 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-14 23:38:50 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-14 23:38:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:38:50 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:38:50 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-14 23:38:50 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-14 23:38:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:38:50 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:38:50 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_user_role
+2015-05-14 23:38:50 INFO  TableMetadata:67 - HHH000037: Columns: [role_id, user_id]
+2015-05-14 23:38:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_q2s6cqmjrrr3g56uxlpx543l7, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:38:50 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:38:50 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-14 23:38:50 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@76df4d97] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-14 23:41:23 INFO  SpringhibAnnotateMain:19 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:41:23 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@61b1acc3: startup date [Thu May 14 23:41:23 IST 2015]; root of context hierarchy
+2015-05-14 23:41:23 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:41:24 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:41:25 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:41:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:41:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:41:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:41:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:41:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:41:26 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-14 23:41:27 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:41:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:41:28 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:41:28 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:41:28 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-14 23:41:28 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-14 23:41:28 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-14 23:41:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:41:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, uk_6ugg4012ia0d6tlpfjoc2bgly]
+2015-05-14 23:41:28 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-14 23:41:28 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-14 23:41:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:41:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:41:28 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-14 23:41:28 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-14 23:41:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:41:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:41:28 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-14 23:41:28 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-14 23:41:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:41:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:41:28 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_user_role
+2015-05-14 23:41:28 INFO  TableMetadata:67 - HHH000037: Columns: [role_id, user_id]
+2015-05-14 23:41:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_q2s6cqmjrrr3g56uxlpx543l7, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:41:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:41:28 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-14 23:41:28 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3e5f3179] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-14 23:44:14 INFO  SpringhibAnnotateMain:21 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:44:14 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@56606032: startup date [Thu May 14 23:44:14 IST 2015]; root of context hierarchy
+2015-05-14 23:44:14 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:44:16 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:44:16 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:44:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:44:16 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:44:16 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:44:16 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:44:17 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:44:17 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-14 23:44:18 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:44:18 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:44:19 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:44:19 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:44:19 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-14 23:44:19 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-14 23:44:19 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-14 23:44:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:44:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, uk_6ugg4012ia0d6tlpfjoc2bgly]
+2015-05-14 23:44:19 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-14 23:44:19 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-14 23:44:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:44:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:44:19 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-14 23:44:19 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-14 23:44:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:44:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:44:19 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-14 23:44:19 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-14 23:44:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:44:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:44:19 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_user_role
+2015-05-14 23:44:19 INFO  TableMetadata:67 - HHH000037: Columns: [role_id, user_id]
+2015-05-14 23:44:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_q2s6cqmjrrr3g56uxlpx543l7, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:44:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:44:19 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-14 23:44:19 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@76186a96] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-14 23:45:43 INFO  SpringhibAnnotateMain:21 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:45:43 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@56606032: startup date [Thu May 14 23:45:43 IST 2015]; root of context hierarchy
+2015-05-14 23:45:44 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:45:45 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:45:45 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:45:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:45:45 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:45:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:45:46 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:45:47 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:45:47 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-14 23:45:47 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:45:47 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:45:48 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:45:48 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:45:48 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-14 23:45:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-14 23:45:48 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-14 23:45:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:45:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, uk_6ugg4012ia0d6tlpfjoc2bgly]
+2015-05-14 23:45:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-14 23:45:48 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-14 23:45:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:45:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:45:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-14 23:45:48 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-14 23:45:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:45:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:45:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-14 23:45:48 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-14 23:45:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:45:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:45:48 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_user_role
+2015-05-14 23:45:48 INFO  TableMetadata:67 - HHH000037: Columns: [role_id, user_id]
+2015-05-14 23:45:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_q2s6cqmjrrr3g56uxlpx543l7, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:45:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:45:48 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-14 23:45:49 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@68be49a5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-05-14 23:47:57 INFO  SpringhibAnnotateMain:21 - ************** BEGINNING PROGRAM **************
+2015-05-14 23:47:58 INFO  ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7c1d740c: startup date [Thu May 14 23:47:58 IST 2015]; root of context hierarchy
+2015-05-14 23:47:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-hibernate-annotation.xml]
+2015-05-14 23:47:59 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [database.properties]
+2015-05-14 23:47:59 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-05-14 23:48:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-05-14 23:48:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2015-05-14 23:48:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-05-14 23:48:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-05-14 23:48:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-05-14 23:48:01 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-05-14 23:48:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-05-14 23:48:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-05-14 23:48:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2015-05-14 23:48:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2015-05-14 23:48:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2015-05-14 23:48:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.empl
+2015-05-14 23:48:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, name, ssn, salary]
+2015-05-14 23:48:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:48:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, uk_6ugg4012ia0d6tlpfjoc2bgly]
+2015-05-14 23:48:02 INFO  TableMetadata:66 - HHH000261: Table found: rand.employee
+2015-05-14 23:48:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, age, name, salary]
+2015-05-14 23:48:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:48:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:48:03 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_role
+2015-05-14 23:48:03 INFO  TableMetadata:67 - HHH000037: Columns: [rolename, role_id]
+2015-05-14 23:48:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:48:03 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:48:03 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_users
+2015-05-14 23:48:03 INFO  TableMetadata:67 - HHH000037: Columns: [username, user_id, password]
+2015-05-14 23:48:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-05-14 23:48:03 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-05-14 23:48:03 INFO  TableMetadata:66 - HHH000261: Table found: rand.inv_user_role
+2015-05-14 23:48:03 INFO  TableMetadata:67 - HHH000037: Columns: [role_id, user_id]
+2015-05-14 23:48:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_q2s6cqmjrrr3g56uxlpx543l7, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:48:03 INFO  TableMetadata:70 - HHH000126: Indexes: [primary, fk_3qqaktggacdf5ifmr2epp3kvt]
+2015-05-14 23:48:03 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2015-05-14 23:48:03 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@76df4d97] of Hibernate SessionFactory for HibernateTransactionManager
