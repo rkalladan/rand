@@ -18,6 +18,8 @@
 			<list>
 				<value>com.rand.sprhib.annotation.model.Employee</value>
 				<value>com.rand.sprhib.annotation.model.Empl</value>
+				<value>com.rand.sprhib.annotation.model.Role</value>
+				<value>com.rand.sprhib.annotation.model.User</value>
 			</list>
 		</property>
  		<property name="hibernateProperties">
