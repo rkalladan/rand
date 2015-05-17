@@ -28,7 +28,7 @@ public class SpringhibAnnotateMain {
         emp.setSsn("ssn00000003");
         service.saveEmpl(emp);*/
 		/*Role role1 =new Role();
-		role1.setRolename("developer");
+		role1.setRolename("admin");
 		service.saveRole(role1);*/
 		Role role=service.getRolename(1);
 		Role role2=service.getRolename(2);
